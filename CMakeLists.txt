@@ -53,7 +53,7 @@ if (GLOW_WITH_OPENCL)
   find_package(OpenCL REQUIRED)
 endif ()
 
-find_package(LLVM CONFIG)
+find_package(LLVM 5.0 CONFIG)
 if (NOT LLVM_FOUND)
   message(FATAL_ERROR "Could not find LLVM. Build LLVM manually and configure the project with -DCMAKE_PREFIX_PATH=/path/to/llvm/install")
 endif()
